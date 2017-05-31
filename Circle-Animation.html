@@ -1,0 +1,91 @@
+<!-- declaration refers to a DTD-->
+<!DOCTYPE html>
+<!-- html language english -->
+<html lang="en">
+<!--Head element-->
+<head>
+	<!-- The <meta> tag provides metadata about the HTML and Specify the character encoding for the HTML -->
+	<meta charset="UTF-8">
+	
+	<!-- Define a description of your web page -->
+	<meta name="description" content="Free Web tutorials">
+	
+	<!--  Define keywords for search engines -->
+	<meta name="keywords" content="HTML,CSS,XML, XHTML,JavaScript">
+	
+	<!-- Define the author of a page -->
+	<meta name="author" content="Gururaj">
+	
+	<!-- Setting the viewport to make your website look good on all devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- It defines the title of the document-->
+	<title>HTML CSS</title>
+	
+     <!--style tag starts here -->
+	 <style  media="screen" type="text/css">
+		/* Creating div1 style sheet*/
+        #div1{
+            text-align:center;						/* Setting the box text-align center  */
+            line-height:100px;						/* Setting line height to 100px */
+            width: 100px;							/* setting the width to 100px  */
+			height: 100px;							/* setting the height of box to 100px */
+			background-color: green;				/* setting box background color to green */
+			border-radius: 0%;						/* setting box border radius to 0 px */
+        }
+        #div1:hover{		
+            background-color: orange;												/* setting box background-color to orange when cursor move on it */
+            -moz-animation-duration: 4s linear 0s infinite alternat Boxcircle;		/* setting animation duration to 4second linear for mozila */
+			animation: 4s linear 0s infinite alternate Boxcircle;					/* setting animation duration to 4 seconds linear for normal webkit*/
+			-moz-animation-name: Boxcircle;											/* setting mozila animation object boxcircle */
+            -webkit-animation-duration: 4s;											/* setting webkit animation duration in 4seconds */
+			-webkit-animation-name: Boxcircle;										/* setting webkit animation object box circle*/
+          	animation-duration: 4s;													/* setting animation duration in 4seconds */
+			animation-name: Boxcircle;												/* setting animation object box circle*/
+        }
+        @-moz-keyframes Boxcircle {			/* Setting the box border-radius attribute for mozila browser  */
+            from {
+				border-radius: 0px;			/* Setting the box border-radius attribute to 0px  */
+            }
+            to {
+				border-radius: 100px;		/* Setting the box border-radius attribute to 100px  */
+            }
+        }
+        @-webkit-keyframes Boxcircle {		/* setting webkit for box in all browser */
+            from {
+				border-radius: 0px;			/* Setting the box border-radius attribute to 0px  */
+            }
+            to {
+				border-radius: 100px;		/* Setting the box border-radius attribute to 100px  */
+            }
+        }
+		@keyframes Boxcircle {				/* Setting the box border-radius attribute for normal browser  */
+			from{
+				border-radius: 0px;			/* Setting the box border-radius attribute to 0px  */
+			}
+			to{
+				border-radius: 100px; 		/* Setting the box border-radius attribute to 100px  */
+			}
+		}
+      /* style tag ends here */   
+      </style>
+      <!-- script tag starts here -->
+	  <script>
+
+	   <!-- scripts tag end here-->
+	   </script>
+<!-- head ends here -->
+</head>
+ <!-- body of Doc starts here -->
+<body>
+<!-- Center tag starts here -->
+   <center>
+		<!-- Create Div with Box using style sheet -->
+       <div id="div1"> Box</div>
+   
+	<!-- Center tag ends here -->
+	</center> 
+<!-- Body tags end here -->
+</body>
+<!-- HTML tag of doc ends here -->
+</html>
